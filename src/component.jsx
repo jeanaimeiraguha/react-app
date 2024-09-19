@@ -14,14 +14,17 @@ const MyFunc = () => {
     const decrement=()=>{
         setAge(age-1)
     }
+    const[isEmployeed , setisEmployed]= useState(false)
 
     return (
         <div>
             <p>Name: {name}</p>
             <button onClick={updateName}>Set Name</button>
+            <p>Is isEmployeed:{isEmployeed ? "Yes":"No"} </p>
             <p>Age: {age}</p> {/* Fixed the second name display to age display */}
             <button onClick={increment}>Increment Age</button>
             <button onClick={decrement}>Decrement Age</button>
+            <button onClick={toggleEmployeestatus}>Decrement Age</button>
         </div>
     );
 };
